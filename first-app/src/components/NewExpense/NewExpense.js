@@ -1,3 +1,4 @@
+
 import './NewExpense.css';
 import NewExpenseForm from './NewExpenseForm';
 
@@ -10,10 +11,11 @@ function NewExpense(props) {
         };
         props.onAddExpense(expenseData) //onAddExpense is a function created in app.js NewExpense component as a listener
     }
-    //onSaveExpenseData and saveExpenseDataHandler will enable us pass data from newExpenseForm
+    //onSaveExpenseData and saveExpenseDataHandler will enable used to pass data from newExpenseForm
     // 
     return (
         <div className="new-expense">
+        
             <NewExpenseForm onSaveExpenseData={saveExpenseDataHandler} />
         </div>
     )
