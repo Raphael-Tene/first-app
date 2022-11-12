@@ -24,7 +24,7 @@ function NewExpenseForm(props) {
 
         const expenseData = {
             title: enteredTitle,
-            amount: enteredAmount,
+            amount: +enteredAmount,
             date: new Date(expenseDate)
         };
         props.onSaveExpenseData(expenseData); //passing form data to onSaveExpenseData created in NewExpense component
